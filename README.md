@@ -29,7 +29,7 @@ Every tweet was cleaned of extraneous characters, including punctuation, URLs, h
 
 ### Breakdown by Sentiment
 
-![brand sentiment](images/brand_sentiment.JPG)
+![alt text](images/brand_sentiment..JPG)
 Overall, negative sentiments dominate across brands, both in count and percentage of tweets. This aligns with the dataset, which contains about twice as many negative tweets compared to positive ones.
 
 ### Positive Tweets for Apple
