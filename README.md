@@ -4,6 +4,8 @@
 
 With numerous consumers using social media to express their opinions on brands and products, it can be challenging for companies to extract valuable insights from the flood of messages. This project aims to assist companies in utilizing the information contained in tweets by developing a classification model. This model will enable companies to input the text of a tweet, or multiple tweets, and automatically classify the sentiment as "Positive" or "Not positive." This capability will help companies better organize and use the information from tweets received after launching a new product or in general.
 
+
+
 Such a classification model has various applications, including:
 
 - Gauging public opinion on a product, brand, or service
@@ -27,25 +29,25 @@ Every tweet was cleaned of extraneous characters, including punctuation, URLs, h
 
 ### Breakdown by Sentiment
 
-![alt text](Images/brand_breakdown_sentiment.PNG)
+![brand sentiment](images/brand_sentiment.JPG)
 Overall, negative sentiments dominate across brands, both in count and percentage of tweets. This aligns with the dataset, which contains about twice as many negative tweets compared to positive ones.
 
 ### Positive Tweets for Apple
 
-![alt text](Images/Positive_tweets_Apple.PNG)
+![alt text](images/positive_tweets_apple.JPG)
 The word cloud analysis reveals that Apple products, especially the iPad 2 and iPhone, are frequently mentioned in positive tweets. The iPhone app and Apple Store are also highlighted, indicating a strong positive sentiment. The presence of the word "free" suggests that giveaways or promotions may have boosted the positive tone. Additionally, there is a positive response to the new Apple Store in downtown Austin.
 
 ### Positive Tweets for Google
-![alt text](Images/Positive_Tweets_Google.PNG)
+![alt text](images/positive_tweets_google.JPG)
 Analysis of positive tweets about Google shows a focus on terms like "map," "circle," "party," "launch," "social network," "new," "mobile," and "Marissa Mayer." This suggests a link between a social networking event and a recent product launch by the company. Like with Apple, the city of Austin is frequently mentioned, indicating potential regional events. Positive sentiment is also associated with the distribution of free products.
 
 # Modelling and Evaluation
-![alt text](Images/random_forest.PNG)
-![alt text](Images/roc_curve_rf.PNG)
+![alt text](images/count_vectorizer_rf.JPG)
+![alt text](images/roc_combined_features.JPG)
 The model has an overall accuracy of 71%, correctly classifying 71% of the tweets. It accurately detected 83% of the negative sentiment tweets, showing a strong capability for identifying negative tweets. However, it only correctly identified 52% of the positive sentiment tweets, meaning it misses nearly half of the positive tweets.
 
-![alt text](Images/grid_search_lm.PNG)
-![alt text](Images/lm_roc_curve.PNG)
+![alt text](images/grid_search_lm.JPG)
+![alt text](images/lm_roc_curve.JPG)
 
 Based on the analysis, the model using Combined Features, SMOTE, and RandomForestClassifier generally outperforms others, especially in terms of accuracy, precision, and recall for negative sentiment (Class 0). It also matches the Tuned Logistic Regression model in several metrics, including AUC.
 
